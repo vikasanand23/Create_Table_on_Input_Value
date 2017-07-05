@@ -2,10 +2,6 @@
     angular.module("app", ["ngRoute"])
         .config(function($routeProvider) {
             $routeProvider
-                .when("/", {
-                    controller: "homeController",
-                    templateUrl: "com/view/home.html"
-                })
                 .when("/Home", {
                     controller: "homeController",
                     templateUrl: "com/view/home.html"
@@ -29,7 +25,8 @@
 				.when("/Contact us", {
                     controller: "underConstController",
                     templateUrl: "com/view/underConstruction.html"
-                })				
+                })
+				.otherwise({redirectTo: '/Home'});
 
         });
 }());
