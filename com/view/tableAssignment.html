@@ -1,0 +1,26 @@
+<div class="container">
+   <h5 class="tableAssignmentTxt">{{ title }}</h5>
+   <p class="tableAssignmentContent">{{ calendar1Content }}</p>
+   <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+         <form name="tablegen">
+            <div class="form-group">
+               <label for="rows">Rows:</label>
+               <input type="number" class="form-control" id="rows" ng-model= "rows" required/>
+            </div>
+            <div class="form-group">
+               <label for="cols">Columns:</label>
+               <input type="number" class="form-control" id="cols" ng-model= "cols" required />
+            </div>
+            <input name="generate" class="readBtn" type="button" value="Create Table!" ng-click='createTable()' ng-disabled="tablegen.$invalid"/>
+         </form>
+      </div>
+      <div class="col-sm-4"></div>
+   </div>
+   <div class="row">
+      <div class="table-responsive">
+         <div id="wrapper"></div>
+      </div>
+   </div>
+</div>
