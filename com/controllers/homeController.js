@@ -1,5 +1,6 @@
 (function() {
     function homeFunc($scope) {
+		$scope.imgGallery = "images/banner.jpg"
         $scope.title = "Welcome to SpringWiz";
         $scope.innerTxt = "is founded by a Global team of Entrepreneurs, Engineers and Data Scientists with expertise and experience in solving real world issues with intuitive interface and intelligent backend.";
         $scope.invoiceImg = "images/einvoice-icon-1-1.png";
