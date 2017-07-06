@@ -16,7 +16,7 @@
         $scope.loanContent = "Get collateral free business loans from India’s leading NBFCs. No processing cost, less processing time competitive interest rates and hassle free process.";
 
         $scope.btnTxt = "Read More";
-        $scope.btnHref = "http://www.spiderg.com/";
+        $scope.btnHref = "http://www.springwiz.com/";
     }
     angular.module("app").controller("homeController", homeFunc)
 }());
